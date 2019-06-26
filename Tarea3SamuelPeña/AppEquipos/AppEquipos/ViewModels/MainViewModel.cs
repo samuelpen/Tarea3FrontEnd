@@ -16,7 +16,7 @@ namespace AppEquipos.ViewModels
         #endregion
 
         #region ViewModels
-        public TeamViewModel Login
+        public TeamViewModel Login ///en caso de login
         {
             get; set;
         }
