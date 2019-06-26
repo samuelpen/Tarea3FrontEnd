@@ -7,16 +7,10 @@ namespace AppEquipos.Models
 {
     public class Team
     {
-        [JsonProperty(PropertyName = "tame")]
+        [JsonProperty(PropertyName = "Title")]
         public string Title { get; set; }
-        [JsonProperty(PropertyName = "embed")]
-        public string Embed { get; set; }
-        [JsonProperty(PropertyName = "url")]
-        public string Url { get; set; }
-        [JsonProperty(PropertyName = "thumbnail")]
+        [JsonProperty(PropertyName = "Thumbnail")]
         public string Thumbnail { get; set; }
-        [JsonProperty(PropertyName = "date")]
-        public DateTime Date { get; set; }
 
     }
 

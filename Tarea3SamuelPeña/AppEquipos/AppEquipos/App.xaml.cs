@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppEquipos.ViewModels;
+using AppEquipos.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,8 +12,12 @@ namespace AppEquipos
         public App()
         {
             InitializeComponent();
-
             MainPage = new MainPage();
+            var mainViewModel = MainViewModel.GetInstance();
+            mainViewModel.Team = new TeamViewModel();
+
+            this.MainPage = new NavigationPage(new TeamPage());
+            
         }
 
         protected override void OnStart()

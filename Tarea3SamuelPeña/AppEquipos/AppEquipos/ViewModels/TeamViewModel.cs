@@ -25,7 +25,7 @@ namespace AppEquipos.ViewModels
 
 
             #region Properties
-            public ObservableCollection<Team> Student
+            public ObservableCollection<Team> Team
             {
                 get { return this.team; }
                 set { SetValue(ref this.team, value); }
@@ -79,7 +79,7 @@ namespace AppEquipos.ViewModels
                     return;
                 }
                 var list = (List<Team>)response.Result;
-                this.Student = new ObservableCollection<Team>(list);
+                this.Team = new ObservableCollection<Team>(list);
                 this.IsRefreshing = false;
             }
             #endregion
